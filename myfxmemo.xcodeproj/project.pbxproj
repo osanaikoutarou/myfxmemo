@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA49CCF21F993F6B61A8CCAF /* Pods_myfxmemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327EE4C69840BF2A99455A54 /* Pods_myfxmemo.framework */; };
 		DAD5295E1F4D4E85003797B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5295D1F4D4E85003797B4 /* AppDelegate.swift */; };
 		DAD529601F4D4E85003797B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5295F1F4D4E85003797B4 /* ViewController.swift */; };
 		DAD529631F4D4E85003797B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD529611F4D4E85003797B4 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15F82FBF99B5D53CB272BBD5 /* Pods-myfxmemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myfxmemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myfxmemo/Pods-myfxmemo.debug.xcconfig"; sourceTree = "<group>"; };
+		327EE4C69840BF2A99455A54 /* Pods_myfxmemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myfxmemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615D644DBBB967A7848BA212 /* Pods-myfxmemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myfxmemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-myfxmemo/Pods-myfxmemo.release.xcconfig"; sourceTree = "<group>"; };
 		DAD5295A1F4D4E85003797B4 /* myfxmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myfxmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD5295D1F4D4E85003797B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD5295F1F4D4E85003797B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA49CCF21F993F6B61A8CCAF /* Pods_myfxmemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638AF551E1B57E08C311C3C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15F82FBF99B5D53CB272BBD5 /* Pods-myfxmemo.debug.xcconfig */,
+				615D644DBBB967A7848BA212 /* Pods-myfxmemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		644FC42A3EA24225B3B3749B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				327EE4C69840BF2A99455A54 /* Pods_myfxmemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAD529511F4D4E85003797B4 = {
 			isa = PBXGroup;
 			children = (
 				DAD5295C1F4D4E85003797B4 /* myfxmemo */,
 				DAD5295B1F4D4E85003797B4 /* Products */,
+				638AF551E1B57E08C311C3C4 /* Pods */,
+				644FC42A3EA24225B3B3749B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD5296F1F4D4E85003797B4 /* Build configuration list for PBXNativeTarget "myfxmemo" */;
 			buildPhases = (
+				A1FB31420B8D100F98A7A4FB /* [CP] Check Pods Manifest.lock */,
 				DAD529561F4D4E85003797B4 /* Sources */,
 				DAD529571F4D4E85003797B4 /* Frameworks */,
 				DAD529581F4D4E85003797B4 /* Resources */,
+				4AD8901344B88B5D443A8E59 /* [CP] Embed Pods Frameworks */,
+				C015670AE1824F8945A6195B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AD8901344B88B5D443A8E59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myfxmemo/Pods-myfxmemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1FB31420B8D100F98A7A4FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C015670AE1824F8945A6195B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myfxmemo/Pods-myfxmemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAD529561F4D4E85003797B4 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		DAD529701F4D4E85003797B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F82FBF99B5D53CB272BBD5 /* Pods-myfxmemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7MW83A3B2;
@@ -276,6 +352,7 @@
 		};
 		DAD529711F4D4E85003797B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615D644DBBB967A7848BA212 /* Pods-myfxmemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U7MW83A3B2;
